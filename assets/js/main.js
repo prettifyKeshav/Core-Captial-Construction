@@ -333,6 +333,13 @@ $(function () {
             nextEl: '.projectSec-next',
         },
         breakpoints: {
+            0: {
+                slidesPerView: 1.2,
+                centeredSlides: true,
+                spaceBetween: 20,
+                speed: 1000,
+            },
+
             992: {
                 slidesPerView: 1.6,
                 centeredSlides: true,

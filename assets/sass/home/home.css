@@ -348,12 +348,26 @@ body {
   line-height: 45px;
   font-family: ttrg-bd;
 }
+@media only screen and (max-width: 540px) {
+  .home-secB .heading h2 {
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
 .home-secB .heading p {
   font-family: Poppins;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
+}
+@media only screen and (max-width: 540px) {
+  .home-secB .heading p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
 }
 .home-secB .heading .swiper-nav {
   position: absolute;
@@ -369,12 +383,33 @@ body {
 .home-secB .whatWeDo-slider {
   padding: 50px 0;
 }
+@media only screen and (max-width: 540px) {
+  .home-secB .whatWeDo-slider {
+    padding: 30px 0;
+  }
+}
+.home-secB .whatWeDo-slider .figure {
+  height: 300px;
+}
+.home-secB .whatWeDo-slider .figinfo h5 {
+  font-size: 24px;
+  line-height: 22px;
+}
+.home-secB .whatWeDo-slider .figinfo p {
+  font-size: 12px;
+  padding: 0 20px;
+}
 
 .home-secC {
   padding: 80px 0;
   background: #000000;
   position: relative;
   overflow: hidden;
+}
+@media only screen and (max-width: 540px) {
+  .home-secC {
+    padding: 50px 0;
+  }
 }
 .home-secC::before {
   content: "";
@@ -398,6 +433,14 @@ body {
   font-family: ttrg-bd;
   color: #fff;
 }
+@media only screen and (max-width: 540px) {
+  .home-secC .heading h2 {
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
 .home-secC .project-swiper-slider {
   width: 100%;
   margin-top: 50px;
@@ -417,6 +460,11 @@ body {
   z-index: 2;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 540px) {
+  .home-secC .project-swiper-slider .swiper-nav {
+    display: none;
+  }
 }
 .home-secC .project-swiper-slider .swiper-nav svg path {
   fill: var(--white);
