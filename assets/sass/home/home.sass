@@ -1,0 +1,543 @@
+@import '../_var'
+
+body
+    font-family: ttrg-bd
+
+
+.home-banner
+    position: relative
+    color: white
+    overflow: hidden
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    @include media(991)
+        height: 50vh
+    @include media(540)
+        height: 70vh
+        
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0) 44.71%, rgba(0, 0, 0, 0.85) 100%),linear-gradient(180deg, rgba(0, 0, 0, 0) 68.75%, rgba(0, 0, 0, 0.85) 100%),linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)
+        @include media(540)    
+            background: linear-gradient(360deg, rgba(0, 0, 0, 0) 44.71%, rgba(0, 0, 0, 0.85) 100%),linear-gradient(180deg, rgba(0, 0, 0, 0) 40.75%, rgba(0, 0, 0, 0.85) 100%),linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)
+
+
+
+    .video-background 
+        video 
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            z-index: -1
+    .container
+        @include media(540)
+            padding: 0
+
+
+    .bg-wrapper
+        // max-width: 50%
+        position: absolute  
+        z-index: 1
+        width: 100%
+        @include media(991)
+            bottom: 40%
+        @include media(540)
+            bottom: 25%
+        .banner-btn
+            @include media(540)
+                display: flex
+                justify-content: center
+        a
+            position: absolute
+            z-index: 1
+            margin: 40px 0
+            background: white   
+            color: black
+            border: 1px solid white
+            @include media(540)
+                margin: 30px 0 0px 0
+        h1
+            font-weight: 700
+            font-size: 40px
+            line-height: 45px
+            text-align: left
+            margin-bottom: 18px
+            max-width: 50%
+            @include media(991)
+                max-width: 70%
+                line-height: 1.2
+                font-size: 30px
+            @include media(540)
+                max-width: 100%
+                font-size: 25px
+                line-height: 1.1
+                text-align: center
+                padding: 0 20px
+                margin-bottom: 8px
+
+        p
+            font-family: $Poppins
+            font-weight: 500
+            font-size: 16px
+            line-height: 100%
+            color: $white
+            max-width: 50%
+            @include media(991)
+                max-width: 100%
+                color: #ffffffe0
+            @include media(540)
+                max-width: 100%
+                font-size: 13px
+                line-height: 1.2
+                text-align: center
+                color: #ffffffdb
+
+
+.homeSwiper
+    .swiper-pagination-bullet 
+        background: rgba(255, 255, 255, 0.5)
+        opacity: 1
+        width: 12px
+        height: 12px
+        background: rgba(255, 255, 255, 0.4) 
+        opacity: 1
+        margin: 0 6px 
+        transition: background 0.3s ease
+        @include media(540)
+            width: 8px
+            height: 8px
+
+    .swiper-pagination-bullet-active 
+        background: #ffffff !important
+    .swiper-pagination-horizontal
+        top: 90%
+        left: 50%
+        width: 100%
+        transform: translate(-50%, -50%)
+        @include media-min(1700)
+            top: 90%
+        @include media-min(1300)
+            top: 92%
+        @include media(540)
+            top: 94%
+
+.home-secA
+    padding: 50px 0
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        background: linear-gradient(90deg, #FFFFFF 0%, rgba(153, 153, 153, 0.21) 100%)
+        z-index: -1
+        top: 0
+        left: 0
+    .flex-box
+        display: flex
+        justify-content: space-between
+        overflow: hidden
+        @include media(540)
+            display: block
+        .flex-box-item:nth-child(1)
+            width: 50%
+            padding: 0 20px 0 0px
+            @include media(540)
+                width: 100%
+                padding: 0
+                text-align: center
+                margin: 0 0 50px 0
+            h2
+                font-weight: 700
+                font-size: 20px
+                line-height: 45px
+                color: var(--primary)
+                margin: 0 0 10px 0
+                @include media(540)
+                    line-height: 1.2
+                    text-align: center
+                    margin: 0 0 20px 0
+            h3
+                font-weight: 700
+                font-size: 40px
+                line-height: 45px
+                margin: 0 0 20px 0
+                @include media(540)
+                    font-size: 21px
+                    line-height: 1.2
+                    text-align: center
+
+            p
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                margin: 0 0 40px 0
+                @include media(540)
+                    font-size: 14px 
+                    line-height: 1.5
+                    margin: 0 0 30px 0
+            .counter-flex
+                width: 100%
+                display: flex
+                justify-content: left 
+                align-items: center
+                gap: 30px
+                @include media(540)
+                    align-items: unset
+                    justify-content: space-around
+                    gap: 0
+                .counter-item
+                    h5
+                        @include media(540)
+                            margin-bottom: 4px
+                    p   
+                        font-family: Poppins
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 25px
+                        @include media(540)
+                            font-size: 10px
+                            line-height: 1.3
+
+            .btn 
+                background-color: var(--primary)
+                color: #fff
+                font-family: $Poppins
+                font-weight: 500
+                &:hover
+                    background-color: $black
+                    border: 1px solid $black
+                    color: $primary
+                    font-weight: 500
+    
+                    
+        .flex-box-item:nth-child(2)
+            width: 45%
+            padding: 0 20px
+            @include media(540)
+                width: 100%
+                padding: 0
+
+            .grid-box
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 10px
+                line-height: 0
+                @include media(540)
+                    gap: 5px    
+                .grid-box-item
+                    border-radius: 9px
+                    overflow: hidden
+                    img
+                        width: 100%
+
+.home-secB
+    padding: 50px 0
+    .heading
+        text-align: center
+        position: relative
+        h2
+            font-weight: 700
+            font-size: 48px
+            line-height: 45px
+            font-family: ttrg-bd
+            
+        p
+            font-family: Poppins
+            font-weight: 500
+            font-size: 16px
+            line-height: 16px
+            text-align: center
+        .swiper-nav
+            position: absolute
+            right: 0
+            bottom: 0
+            z-index: 2
+            @include media(540)
+                display: none
+    .whatWeDo-slider
+        padding: 50px 0
+
+.home-secC
+    padding: 80px 0
+    background: #000000
+    position: relative
+    overflow: hidden
+    &::before
+        content: ""
+        position: absolute
+        width: 50%
+        height: 100%
+        top: 0
+        left: -250px
+        background-color: #4B4B4B70
+        border-radius: 0%
+        transform: rotate(43deg)
+    .heading
+        text-align: center
+        position: relative
+        h2
+            font-weight: 700
+            font-size: 48px
+            line-height: 45px
+            font-family: ttrg-bd
+            color: #fff
+    .project-swiper-slider
+        width: 100%
+        // margin-left: auto 
+        margin-top: 50px
+        margin-bottom: 50px
+        .projectSec-slider
+            .swiper-wrapper
+                .swiper-slide
+                    opacity: 0.56
+                .swiper-slide-active
+                    opacity: 1
+        .swiper-nav
+            position: absolute
+            right: 8%
+            top: 50%
+            transform: translate(50%, -50%)
+            z-index: 2
+            display: flex
+            flex-direction: column
+            svg path
+                fill: $white
+            .swiper-prev,.swiper-next.gray-border
+                border-color: $white
+                &:hover
+                    border: 1px solid var(--primary)
+        .news-col
+            .figure
+                height: 428px
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.65) 100%)
+            .figinfo
+                max-width: 60%
+                top: 70%
+                h5
+                    font-family: $Ttrgbd
+                    font-weight: 700
+                    font-size: 40px
+                    line-height: 1
+                    margin-bottom: 12px
+                p
+                    font-family: Poppins
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 1.4
+                    text-align: center
+                    margin-bottom: 20px
+                .btn
+                    font-family: Poppins
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 18px
+                    text-align: center
+
+
+
+
+.home-secD
+    padding: 50px 0 
+    background: #EDEDED
+    .heading
+        h2
+            font-weight: 700
+            font-size: 48px
+            line-height: 45px
+            text-align: center
+            font-family: ttrg-bd
+
+    .grid-box
+        padding: 50px 0 
+        display: grid
+        gap: 20px
+        grid-template-columns: repeat(3, 1fr)
+        overflow: hidden
+        @include media(540)
+            grid-template-columns: repeat(1,1fr)
+        .grid-box-item
+            display: flex
+            flex-direction: column
+            border-radius: 15px
+            overflow: hidden
+            box-shadow: 0px 3px 8px 0px #0000003D
+            position: relative
+            &:has(.figure:is(a):hover,.figcaption .ttl:is(a):hover, .figcaption .read-more-btn:is(a):hover)
+                .figure
+                    &::before
+                        animation: shine 0.4s linear
+                    img
+                        transform: scale(1.04)
+                        width: 100%
+            .figure
+                height: 100%
+                width: 100%
+                line-height: 0
+                display: block
+                overflow: hidden
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)
+                    z-index: 1
+                @include shine
+                img
+                    width: 100%
+                    height: 100%
+                    aspect-ratio: 1.2
+                    transition: .5s ease
+                    position: relative
+                    z-index: 0
+                    object-fit: cover
+                    
+            .figinfo
+                position: absolute
+                color: white
+                text-align: center
+                width: 100%
+                top: 80%
+                left: 50%
+                -ms-transform: translate(-50%, -50%)
+                transform: translate(-50%, -50%)
+                z-index: 1
+                h5
+                    font-weight: 700
+                    font-size: 28px
+                    line-height: 1.3
+                    margin-bottom: 10px
+                    margin: auto
+                    max-width: 80%
+                p
+                    font-family: Poppins
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 16px
+                    color: var(--white)
+                    text-align: center
+
+.home-secE
+    padding: 50px 0 100px 0px
+    .heading
+        h2
+            ffont-weight: 700
+            font-size: 48px
+            line-height: 45px
+            text-align: center
+            font-family: ttrg-bd
+        p
+            text-align: center
+    .box-flex
+        padding: 50px 0
+        display: flex
+        justify-content: space-between
+        overflow: hidden
+        @include media(540)
+            display: block
+        .news-col .figure
+            height: 450px
+        .box-flex-item:first-child
+            width: 53%
+            @include media(540)
+                width: 100%
+            figure
+                height: 450px
+            .figinfo
+                width: 90%
+                text-align: left
+                top: 70%
+                h5
+                    line-height: 1.2
+                    font-family: Poppins
+                    font-weight: 600
+                    font-size: 32px
+                    line-height: 36px
+                p
+                    font-family: Poppins
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 24px
+                    text-align: left
+        .box-flex-item:last-child
+            width: 43%
+            display: flex
+            flex-direction: column
+            gap: 22px
+            @include media(540)
+                width: 100%
+            .flex-box
+                padding: 15px
+                background: #EAEAEA
+                // height: 213px
+                border-radius: 10px
+
+                display: flex
+                justify-content: space-between
+                .left
+                    width: 190px
+                    height: 175px
+                    border-radius: 5px
+                    overflow: hidden
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                .right
+                    width: 300px
+                    h5
+                        font-family: Poppins
+                        font-weight: 600
+                        font-size: 20px
+                        line-height: 16px
+                        margin-bottom: 10px 
+                    p
+                        font-family: Poppins
+                        font-weight: 400
+                        font-size: 15px
+                        line-height: 18px
+                        margin-bottom: 10px 
+
+                    a
+                        font-family: Poppins
+                        font-weight: 500
+                        font-size: 15px
+                        line-height: 18px
+                        color: #D4943C
+                        margin-bottom: 10px 
+    .btn
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 164px
+        margin: auto
+        font-weight: 600
+        font-family: $Poppins
+        &:hover
+            background: $black
+            font-weight: 600
+            color: $primary
+            border-color: $black 
+
+
+
+// .swiper-pagination-bullets,.swiper-pagination-horizontal
+//     position: relative
+//     text-align: center
+//     bottom: var(--swiper-pagination-bottom, 18px) !important
+//     z-index: 4
+    // --swiper-pagination-color:#575757 !important
