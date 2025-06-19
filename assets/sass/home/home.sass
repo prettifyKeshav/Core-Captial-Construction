@@ -12,6 +12,8 @@ body
     display: flex
     flex-direction: column
     justify-content: center
+    @include media(1024)
+        height: 80vh
     @include media(991)
         height: 50vh
     @include media(540)
@@ -172,6 +174,10 @@ body
                 font-size: 40px
                 line-height: 45px
                 margin: 0 0 20px 0
+                @include media(991)
+                    max-width: 100%
+                    line-height: 1.1
+                    font-size: 30px    
                 @include media(540)
                     font-size: 21px
                     line-height: 1.2
@@ -182,6 +188,10 @@ body
                 font-size: 16px
                 line-height: 24px
                 margin: 0 0 40px 0
+                @include media(991)
+                    margin: 0 0 20px 0
+                    font-size: 14px
+                    line-height: 1.5
                 @include media(540)
                     font-size: 14px 
                     line-height: 1.5
@@ -192,6 +202,8 @@ body
                 justify-content: left 
                 align-items: center
                 gap: 30px
+                @include media(991)
+                    align-items: unset
                 @include media(540)
                     align-items: unset
                     justify-content: space-around
@@ -205,6 +217,10 @@ body
                         font-weight: 500
                         font-size: 14px
                         line-height: 25px
+                        @include media(991)
+                            font-size: 10px
+                            line-height: 1.3
+                            justify-content: space-between
                         @include media(540)
                             font-size: 10px
                             line-height: 1.3
@@ -224,6 +240,8 @@ body
         .flex-box-item:nth-child(2)
             width: 45%
             padding: 0 20px
+            @include media(991)
+                padding: 0
             @include media(540)
                 width: 100%
                 padding: 0
@@ -251,6 +269,9 @@ body
             font-size: 48px
             line-height: 45px
             font-family: ttrg-bd
+            @include media(991)
+                font-size: 36px
+                margin-bottom: 10px
             @include media(540)
                 font-size: 34px
                 line-height: 1.2
@@ -274,6 +295,8 @@ body
                 display: none
     .whatWeDo-slider
         padding: 50px 0
+        @include media(991)
+            padding: 40px 0 10px 0
         @include media(540)
             padding: 30px 0
         .figure
@@ -322,6 +345,9 @@ body
         // margin-left: auto 
         margin-top: 50px
         margin-bottom: 50px
+        @include media(540)
+            margin-bottom: 0px
+            margin-top: 30px
         .projectSec-slider
             .swiper-wrapper
                 .swiper-slide
@@ -348,15 +374,27 @@ body
             .figure
                 height: 428px
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.65) 100%)
+                @include media(540)
+                    height: 360px
             .figinfo
                 max-width: 60%
                 top: 70%
+                @include media(1024)
+                    max-width: 80%
+                @include media(991)
+                    max-width: 80%
+                @include media(540)
+                    max-width: 90%
                 h5
                     font-family: $Ttrgbd
                     font-weight: 700
                     font-size: 40px
                     line-height: 1
                     margin-bottom: 12px
+                    @include media(991)
+                        font-size: 36px
+                    @include media(540)
+                        font-size: 24px
                 p
                     font-family: Poppins
                     font-weight: 500
@@ -364,6 +402,11 @@ body
                     line-height: 1.4
                     text-align: center
                     margin-bottom: 20px
+                    @include media(991)
+                        color: #ffffffd1
+                    @include media(540)
+                        font-size: 12px
+                        color: #ffffffd1
                 .btn
                     font-family: Poppins
                     font-weight: 500
@@ -384,6 +427,10 @@ body
             line-height: 45px
             text-align: center
             font-family: ttrg-bd
+            @include media(540)
+                font-size: 34px
+                line-height: 1.2
+                text-align: center
 
     .grid-box
         padding: 50px 0 
@@ -391,8 +438,11 @@ body
         gap: 20px
         grid-template-columns: repeat(3, 1fr)
         overflow: hidden
+        @include media(991)
+            padding: 40px 0 20px 0
         @include media(540)
             grid-template-columns: repeat(1,1fr)
+            padding: 30px 0 0px 0
         .grid-box-item
             display: flex
             flex-direction: column
@@ -449,6 +499,10 @@ body
                     margin-bottom: 10px
                     margin: auto
                     max-width: 80%
+                    @include media(991)
+                        font-size: 18px
+                    @include media(540)
+                        font-size: 24px
                 p
                     font-family: Poppins
                     font-weight: 500
@@ -459,6 +513,10 @@ body
 
 .home-secE
     padding: 50px 0 100px 0px
+    @include media(991)
+        padding: 50px 0 70px 0px
+    @include media(540)
+        padding: 50px 0 
     .heading
         h2
             ffont-weight: 700
@@ -466,21 +524,42 @@ body
             line-height: 45px
             text-align: center
             font-family: ttrg-bd
+            @include media(540)
+                font-size: 34px
+                line-height: 1.2
+                text-align: center
+                margin-bottom: 5px
         p
             text-align: center
+            @include media(540)
+                font-size: 12px 
+                line-height: 1.2
     .box-flex
         padding: 50px 0
         display: flex
         justify-content: space-between
         overflow: hidden
+        @include media(991)
+            display: block
         @include media(540)
             display: block
-        .news-col .figure
-            height: 450px
+            padding: 40px 0
+        .news-col 
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)
+            .figure
+                height: 450px
+                @include media(991)
+                    height: 360px
+                @include media(540)
+                    height: 360px
         .box-flex-item:first-child
             width: 53%
+            @include media(991)
+                width: 100%
+                margin: 0 0 30px 0
             @include media(540)
                 width: 100%
+                margin-bottom: 30px
             figure
                 height: 450px
             .figinfo
@@ -492,18 +571,30 @@ body
                     font-family: Poppins
                     font-weight: 600
                     font-size: 32px
-                    line-height: 36px
+                    @include media(540)
+                        font-size: 22px
+                        line-height: 1.1
+                        text-align: center
                 p
                     font-family: Poppins
                     font-weight: 500
                     font-size: 16px
                     line-height: 24px
                     text-align: left
+                    @include media(540)
+                        font-size: 15px
+                        color: #ffffffeb
+                        line-height: 1.2
+                        text-align: center
+
         .box-flex-item:last-child
             width: 43%
             display: flex
             flex-direction: column
             gap: 22px
+            @include media(991)
+                width: 100%
+                flex-direction: row
             @include media(540)
                 width: 100%
             .flex-box
@@ -511,20 +602,31 @@ body
                 background: #EAEAEA
                 // height: 213px
                 border-radius: 10px
-
                 display: flex
                 justify-content: space-between
+                @include media(540)
+                    display: block
                 .left
                     width: 190px
                     height: 175px
                     border-radius: 5px
                     overflow: hidden
+                    @include media(991)
+                        width: 45%
+                    @include media(540)
+                        width: 100%
+                        margin: 0 0 15px 0
                     img
                         width: 100%
                         height: 100%
                         object-fit: cover
                 .right
                     width: 300px
+                    @include media(991)
+                        width: 45%
+                    @include media(540)
+                        width: 100%
+                        text-align: center
                     h5
                         font-family: Poppins
                         font-weight: 600
@@ -559,8 +661,6 @@ body
             font-weight: 600
             color: $primary
             border-color: $black 
-
-
 
 // .swiper-pagination-bullets,.swiper-pagination-horizontal
 //     position: relative

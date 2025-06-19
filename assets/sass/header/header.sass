@@ -93,6 +93,8 @@ header
   align-items: center
   padding-left: 2rem
   text-align: right
+  @include media(1024)
+    display: none
   .close
     display: none
     position: absolute
@@ -311,7 +313,6 @@ footer
         padding-right: 1.5rem
         @include media(991)
             padding-right: 0
-            text-align: center            
         li
             display: inline-flex
             flex-wrap: wrap
@@ -323,6 +324,9 @@ footer
                 @include media(1200)
                     padding-right: 16px
                     margin-right: 16px
+                @include media(991)
+                    padding: 20px 30px 20px 0px
+                    
             .ico
                 flex: 0 1 auto
             .inf
@@ -355,6 +359,10 @@ footer
                 a
                     &:hover
                         color: $primary
+    .colA li
+        @include media(991)
+            &:last-child
+                padding:20px  0
     .colB
         display: flex
         align-items: center
@@ -363,6 +371,9 @@ footer
           display: flex
           align-items: center
           gap: 20px
+          @include media(991)
+            gap: 4px
+
 
   .footer-wrapper
     padding: 50px 0
@@ -382,6 +393,8 @@ footer
       grid-gap: 20px
       position: relative
       z-index: 1
+      @include media(991)
+        grid-template-columns: repeat(2, 1fr)
       @include media(675)
         grid-template-columns: repeat(1,1fr)
         grid-gap: 40px

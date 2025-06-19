@@ -24,6 +24,11 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (max-width: 1024px) {
+  .home-banner {
+    height: 80vh;
+  }
+}
 @media only screen and (max-width: 991px) {
   .home-banner {
     height: 50vh;
@@ -243,6 +248,13 @@ body {
   line-height: 45px;
   margin: 0 0 20px 0;
 }
+@media only screen and (max-width: 991px) {
+  .home-secA .flex-box .flex-box-item:nth-child(1) h3 {
+    max-width: 100%;
+    line-height: 1.1;
+    font-size: 30px;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secA .flex-box .flex-box-item:nth-child(1) h3 {
     font-size: 21px;
@@ -255,6 +267,13 @@ body {
   font-size: 16px;
   line-height: 24px;
   margin: 0 0 40px 0;
+}
+@media only screen and (max-width: 991px) {
+  .home-secA .flex-box .flex-box-item:nth-child(1) p {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secA .flex-box .flex-box-item:nth-child(1) p {
@@ -269,6 +288,11 @@ body {
   justify-content: left;
   align-items: center;
   gap: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .home-secA .flex-box .flex-box-item:nth-child(1) .counter-flex {
+    align-items: unset;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secA .flex-box .flex-box-item:nth-child(1) .counter-flex {
@@ -287,6 +311,13 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 25px;
+}
+@media only screen and (max-width: 991px) {
+  .home-secA .flex-box .flex-box-item:nth-child(1) .counter-flex .counter-item p {
+    font-size: 10px;
+    line-height: 1.3;
+    justify-content: space-between;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secA .flex-box .flex-box-item:nth-child(1) .counter-flex .counter-item p {
@@ -309,6 +340,11 @@ body {
 .home-secA .flex-box .flex-box-item:nth-child(2) {
   width: 45%;
   padding: 0 20px;
+}
+@media only screen and (max-width: 991px) {
+  .home-secA .flex-box .flex-box-item:nth-child(2) {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secA .flex-box .flex-box-item:nth-child(2) {
@@ -348,6 +384,12 @@ body {
   line-height: 45px;
   font-family: ttrg-bd;
 }
+@media only screen and (max-width: 991px) {
+  .home-secB .heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secB .heading h2 {
     font-size: 34px;
@@ -382,6 +424,11 @@ body {
 }
 .home-secB .whatWeDo-slider {
   padding: 50px 0;
+}
+@media only screen and (max-width: 991px) {
+  .home-secB .whatWeDo-slider {
+    padding: 40px 0 10px 0;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secB .whatWeDo-slider {
@@ -446,6 +493,12 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 540px) {
+  .home-secC .project-swiper-slider {
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+}
 .home-secC .project-swiper-slider .projectSec-slider .swiper-wrapper .swiper-slide {
   opacity: 0.56;
 }
@@ -479,9 +532,29 @@ body {
   height: 428px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 }
+@media only screen and (max-width: 540px) {
+  .home-secC .project-swiper-slider .news-col .figure {
+    height: 360px;
+  }
+}
 .home-secC .project-swiper-slider .news-col .figinfo {
   max-width: 60%;
   top: 70%;
+}
+@media only screen and (max-width: 1024px) {
+  .home-secC .project-swiper-slider .news-col .figinfo {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .home-secC .project-swiper-slider .news-col .figinfo {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home-secC .project-swiper-slider .news-col .figinfo {
+    max-width: 90%;
+  }
 }
 .home-secC .project-swiper-slider .news-col .figinfo h5 {
   font-family: "ttrg-bd";
@@ -490,6 +563,16 @@ body {
   line-height: 1;
   margin-bottom: 12px;
 }
+@media only screen and (max-width: 991px) {
+  .home-secC .project-swiper-slider .news-col .figinfo h5 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home-secC .project-swiper-slider .news-col .figinfo h5 {
+    font-size: 24px;
+  }
+}
 .home-secC .project-swiper-slider .news-col .figinfo p {
   font-family: Poppins;
   font-weight: 500;
@@ -497,6 +580,17 @@ body {
   line-height: 1.4;
   text-align: center;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .home-secC .project-swiper-slider .news-col .figinfo p {
+    color: rgba(255, 255, 255, 0.8196078431);
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home-secC .project-swiper-slider .news-col .figinfo p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8196078431);
+  }
 }
 .home-secC .project-swiper-slider .news-col .figinfo .btn {
   font-family: Poppins;
@@ -517,6 +611,13 @@ body {
   text-align: center;
   font-family: ttrg-bd;
 }
+@media only screen and (max-width: 540px) {
+  .home-secD .heading h2 {
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
 .home-secD .grid-box {
   padding: 50px 0;
   display: grid;
@@ -524,9 +625,15 @@ body {
   grid-template-columns: repeat(3, 1fr);
   overflow: hidden;
 }
+@media only screen and (max-width: 991px) {
+  .home-secD .grid-box {
+    padding: 40px 0 20px 0;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secD .grid-box {
     grid-template-columns: repeat(1, 1fr);
+    padding: 30px 0 0px 0;
   }
 }
 .home-secD .grid-box .grid-box-item {
@@ -608,6 +715,16 @@ body {
   margin: auto;
   max-width: 80%;
 }
+@media only screen and (max-width: 991px) {
+  .home-secD .grid-box .grid-box-item .figinfo h5 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home-secD .grid-box .grid-box-item .figinfo h5 {
+    font-size: 24px;
+  }
+}
 .home-secD .grid-box .grid-box-item .figinfo p {
   font-family: Poppins;
   font-weight: 500;
@@ -620,6 +737,16 @@ body {
 .home-secE {
   padding: 50px 0 100px 0px;
 }
+@media only screen and (max-width: 991px) {
+  .home-secE {
+    padding: 50px 0 70px 0px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home-secE {
+    padding: 50px 0;
+  }
+}
 .home-secE .heading h2 {
   ffont-weight: 700;
   font-size: 48px;
@@ -627,8 +754,22 @@ body {
   text-align: center;
   font-family: ttrg-bd;
 }
+@media only screen and (max-width: 540px) {
+  .home-secE .heading h2 {
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
 .home-secE .heading p {
   text-align: center;
+}
+@media only screen and (max-width: 540px) {
+  .home-secE .heading p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
 }
 .home-secE .box-flex {
   padding: 50px 0;
@@ -636,20 +777,46 @@ body {
   justify-content: space-between;
   overflow: hidden;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 991px) {
   .home-secE .box-flex {
     display: block;
   }
 }
+@media only screen and (max-width: 540px) {
+  .home-secE .box-flex {
+    display: block;
+    padding: 40px 0;
+  }
+}
+.home-secE .box-flex .news-col {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+}
 .home-secE .box-flex .news-col .figure {
   height: 450px;
+}
+@media only screen and (max-width: 991px) {
+  .home-secE .box-flex .news-col .figure {
+    height: 360px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home-secE .box-flex .news-col .figure {
+    height: 360px;
+  }
 }
 .home-secE .box-flex .box-flex-item:first-child {
   width: 53%;
 }
+@media only screen and (max-width: 991px) {
+  .home-secE .box-flex .box-flex-item:first-child {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+}
 @media only screen and (max-width: 540px) {
   .home-secE .box-flex .box-flex-item:first-child {
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 .home-secE .box-flex .box-flex-item:first-child figure {
@@ -665,7 +832,13 @@ body {
   font-family: Poppins;
   font-weight: 600;
   font-size: 32px;
-  line-height: 36px;
+}
+@media only screen and (max-width: 540px) {
+  .home-secE .box-flex .box-flex-item:first-child .figinfo h5 {
+    font-size: 22px;
+    line-height: 1.1;
+    text-align: center;
+  }
 }
 .home-secE .box-flex .box-flex-item:first-child .figinfo p {
   font-family: Poppins;
@@ -674,11 +847,25 @@ body {
   line-height: 24px;
   text-align: left;
 }
+@media only screen and (max-width: 540px) {
+  .home-secE .box-flex .box-flex-item:first-child .figinfo p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9215686275);
+    line-height: 1.2;
+    text-align: center;
+  }
+}
 .home-secE .box-flex .box-flex-item:last-child {
   width: 43%;
   display: flex;
   flex-direction: column;
   gap: 22px;
+}
+@media only screen and (max-width: 991px) {
+  .home-secE .box-flex .box-flex-item:last-child {
+    width: 100%;
+    flex-direction: row;
+  }
 }
 @media only screen and (max-width: 540px) {
   .home-secE .box-flex .box-flex-item:last-child {
@@ -692,11 +879,27 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 540px) {
+  .home-secE .box-flex .box-flex-item:last-child .flex-box {
+    display: block;
+  }
+}
 .home-secE .box-flex .box-flex-item:last-child .flex-box .left {
   width: 190px;
   height: 175px;
   border-radius: 5px;
   overflow: hidden;
+}
+@media only screen and (max-width: 991px) {
+  .home-secE .box-flex .box-flex-item:last-child .flex-box .left {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home-secE .box-flex .box-flex-item:last-child .flex-box .left {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
 }
 .home-secE .box-flex .box-flex-item:last-child .flex-box .left img {
   width: 100%;
@@ -706,6 +909,17 @@ body {
 }
 .home-secE .box-flex .box-flex-item:last-child .flex-box .right {
   width: 300px;
+}
+@media only screen and (max-width: 991px) {
+  .home-secE .box-flex .box-flex-item:last-child .flex-box .right {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home-secE .box-flex .box-flex-item:last-child .flex-box .right {
+    width: 100%;
+    text-align: center;
+  }
 }
 .home-secE .box-flex .box-flex-item:last-child .flex-box .right h5 {
   font-family: Poppins;

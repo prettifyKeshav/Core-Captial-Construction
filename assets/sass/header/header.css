@@ -2126,6 +2126,11 @@ header .header-wrapper .ham-btn span {
   padding-left: 2rem;
   text-align: right;
 }
+@media only screen and (max-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+}
 .mobile-nav .close {
   display: none;
   position: absolute;
@@ -2385,7 +2390,6 @@ footer .upper-footer .colA {
 @media only screen and (max-width: 991px) {
   footer .upper-footer .colA {
     padding-right: 0;
-    text-align: center;
   }
 }
 footer .upper-footer .colA li {
@@ -2401,6 +2405,11 @@ footer .upper-footer .colA li:not(:last-child) {
   footer .upper-footer .colA li:not(:last-child) {
     padding-right: 16px;
     margin-right: 16px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  footer .upper-footer .colA li:not(:last-child) {
+    padding: 20px 30px 20px 0px;
   }
 }
 footer .upper-footer .colA li .ico {
@@ -2454,6 +2463,11 @@ footer .upper-footer .colA li .inf a, footer .upper-footer .colA li .inf p {
 footer .upper-footer .colA li .inf a:hover {
   color: var(--primary);
 }
+@media only screen and (max-width: 991px) {
+  footer .upper-footer .colA li:last-child {
+    padding: 20px 0;
+  }
+}
 footer .upper-footer .colB {
   display: flex;
   align-items: center;
@@ -2463,6 +2477,11 @@ footer .upper-footer .colB .social-icons {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media only screen and (max-width: 991px) {
+  footer .upper-footer .colB .social-icons {
+    gap: 4px;
+  }
 }
 footer .footer-wrapper {
   padding: 50px 0;
@@ -2483,6 +2502,11 @@ footer .footer-wrapper .grid-box {
   grid-gap: 20px;
   position: relative;
   z-index: 1;
+}
+@media only screen and (max-width: 991px) {
+  footer .footer-wrapper .grid-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media only screen and (max-width: 675px) {
   footer .footer-wrapper .grid-box {
