@@ -37,12 +37,18 @@ body
         left: 50%
         transform: translate(-50%, -50%)
         text-align: center
+        @include media(540)
+            top: 75%
         h1
             font-weight: 700
             font-size: 48px
             line-height: 45px
             text-align: center
             margin-bottom: 18px
+            @include media(540)
+                font-size: 34px
+                line-height: 1.2
+                margin-bottom: 5px
 
         p
             font-family: poppins
@@ -50,7 +56,10 @@ body
             font-size: 16px
             line-height: 100%
             color: $white
-
+            @include media(540)
+                font-size: 14px
+                line-height: 1.4
+                color: rgba(255, 255, 255, 0.8117647059)
         .btn 
             display: inline-block
             margin-top: 30px
@@ -64,6 +73,8 @@ body
             font-family: poppins
 .tech-secA
     padding: 50px 0
+    @include media(1024)
+        padding: 0px 0 50px 0
     .container
         max-width: 1080px
     .content
@@ -86,10 +97,11 @@ body
             font-weight: 400
             font-size: 16px
             line-height: 24px
-
-
-            @include media(540)
+            @include media(991)
                 font-size: 14px 
+                line-height: 1.4
+            @include media(540)
+                font-size: 12px 
             
         h2 
             font-family: poppins
@@ -97,6 +109,11 @@ body
             font-size: 30px
             line-height: 45px
             color: $black
+            margin-bottom: 10px
+            @include media(991)
+                line-height: 1.1
+                margin-bottom: 10px
+                font-size: 24px
 
         .flex-box
             overflow: hidden
@@ -105,11 +122,13 @@ body
             margin-bottom: 80px
             align-items: center
             gap: 50px
-            @include media(700)
+            @include media(991)
+                margin-bottom: 50px
+            @include media(540)
                 display: block
-                margin-bottom: 20px
-                gap:    0px
-
+                margin-bottom: 40px
+                gap: 0px
+                text-align: center
 
             .flex-item-left
                 width: 100%

@@ -71,6 +71,7 @@ body {
 @media only screen and (max-width: 540px) {
   .contact-banner .bg-wrapper h1 {
     font-size: 38px;
+    margin-bottom: 7px;
   }
 }
 .contact-banner .bg-wrapper p {
@@ -118,6 +119,11 @@ body {
 @media only screen and (max-width: 991px) {
   .contact-secA .grid-box .grid-box-item {
     padding: 21px 8px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secA .grid-box .grid-box-item {
+    height: auto;
   }
 }
 .contact-secA .grid-box .grid-box-item .title {

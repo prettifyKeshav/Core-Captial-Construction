@@ -60,6 +60,11 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+@media only screen and (max-width: 540px) {
+  .tech-banner .bg-wrapper {
+    top: 75%;
+  }
+}
 .tech-banner .bg-wrapper h1 {
   font-weight: 700;
   font-size: 48px;
@@ -67,12 +72,26 @@ body {
   text-align: center;
   margin-bottom: 18px;
 }
+@media only screen and (max-width: 540px) {
+  .tech-banner .bg-wrapper h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+}
 .tech-banner .bg-wrapper p {
   font-family: poppins;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
   color: var(--white);
+}
+@media only screen and (max-width: 540px) {
+  .tech-banner .bg-wrapper p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8117647059);
+  }
 }
 .tech-banner .bg-wrapper .btn {
   display: inline-block;
@@ -89,6 +108,11 @@ body {
 
 .tech-secA {
   padding: 50px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .tech-secA {
+    padding: 0px 0 50px 0;
+  }
 }
 .tech-secA .container {
   max-width: 1080px;
@@ -122,9 +146,15 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 991px) {
   .tech-secA .content p {
     font-size: 14px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .tech-secA .content p {
+    font-size: 12px;
   }
 }
 .tech-secA .content h2 {
@@ -133,6 +163,14 @@ body {
   font-size: 30px;
   line-height: 45px;
   color: var(--black);
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .tech-secA .content h2 {
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
 }
 .tech-secA .content .flex-box {
   overflow: hidden;
@@ -142,11 +180,17 @@ body {
   align-items: center;
   gap: 50px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 991px) {
+  .tech-secA .content .flex-box {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 540px) {
   .tech-secA .content .flex-box {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     gap: 0px;
+    text-align: center;
   }
 }
 .tech-secA .content .flex-box .flex-item-left {

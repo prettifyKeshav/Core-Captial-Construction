@@ -1155,6 +1155,7 @@ button {
   padding-bottom: 10px;
   padding-left: 20px;
   background: var(--primary);
+  border: 1px solid var(--primary);
 }
 .btn-btn:hover {
   background: none;

@@ -225,16 +225,16 @@ $(function () {
 
     // Home-Swiper==========================>>>>
     new Swiper(".homeSwiper", {
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 9000,
-                disableOnInteraction: false,
-            },
-        });
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 9000,
+            disableOnInteraction: false,
+        },
+    });
     // Home-Swiper==========================>>>>
 
 
@@ -363,7 +363,7 @@ $(function () {
                 slidesPerView: 3
             },
             768: {
-                slidesPerView: 3
+                slidesPerView: 2
             },
             480: {
                 slidesPerView: 1.2
@@ -418,7 +418,14 @@ $(function () {
         }
     });
     // home page banner slider end
+    //==============================
+    const body = document.querySelector("body");
+    const header = document.querySelector("header");
 
+    if (body.classList.contains("home-page") && header.classList.contains("header-fill")) {
+        header.classList.remove("header-fill");
+    }
+    //==============================
 
     // testimonials slider
     new Swiper(".testimonials-slider", {
@@ -676,7 +683,7 @@ $(function () {
             }
         }
     });
-    
+
 
     new Swiper('.about-journey-slider', {
         slidesPerView: 1,
