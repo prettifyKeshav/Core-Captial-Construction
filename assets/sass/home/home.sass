@@ -326,6 +326,11 @@ body
         background-color: #4B4B4B70
         border-radius: 0%
         transform: rotate(43deg)
+        @include media(991)
+            width: 70%
+        @include media(540)
+            width: 130%
+            top: 30px
     .heading
         text-align: center
         position: relative
@@ -499,6 +504,8 @@ body
                     margin-bottom: 10px
                     margin: auto
                     max-width: 80%
+                    @include media(1024)
+                        font-size: 24px
                     @include media(991)
                         font-size: 18px
                     @include media(540)
@@ -513,6 +520,8 @@ body
 
 .home-secE
     padding: 50px 0 100px 0px
+    @include media(1024)
+        padding: 50px 0 60px 0px
     @include media(991)
         padding: 50px 0 70px 0px
     @include media(540)
@@ -592,11 +601,15 @@ body
             display: flex
             flex-direction: column
             gap: 22px
+            @include media(1024)
+                gap: 40px
             @include media(991)
                 width: 100%
                 flex-direction: row
             @include media(540)
                 width: 100%
+                flex-direction: column
+
             .flex-box
                 padding: 15px
                 background: #EAEAEA
@@ -622,6 +635,8 @@ body
                         object-fit: cover
                 .right
                     width: 300px
+                    @include media(1024)
+                        width: 45%
                     @include media(991)
                         width: 45%
                     @include media(540)

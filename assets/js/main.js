@@ -231,7 +231,7 @@ $(function () {
                 clickable: true,
             },
             autoplay: {
-                delay: 99989000,
+                delay: 9000,
                 disableOnInteraction: false,
             },
         });

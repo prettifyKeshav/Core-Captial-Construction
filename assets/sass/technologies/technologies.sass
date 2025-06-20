@@ -11,6 +11,10 @@ body
     display: flex
     flex-direction: column
     justify-content: center
+    @include media(1024)
+        height: 70vh
+    @include media(991)
+        height: 40vh
     &::before
         content: ''
         position: absolute

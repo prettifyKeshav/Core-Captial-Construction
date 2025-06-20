@@ -12,6 +12,13 @@ body
     flex-direction: column
     justify-content: center
     margin-top: var(--headerheight)
+    @include media(1024)
+        margin-top: 50px
+        height: 70vh
+    @include media(991)
+        height: 40vh
+    @include media(540)
+        height: 40vh
     &::before
         content: ''
         position: absolute
@@ -34,20 +41,33 @@ body
         left: 50%
         transform: translate(-50%, -50%)
         text-align: center
+        @include media(1024)
+            width: 100%
+        @include media(991)
+        @include media(540)
+            width: 80%
         h1
             font-weight: 700
             font-size: 48px
             line-height: 45px
             text-align: center
             margin-bottom: 18px
-
+            @include media(1024)
+            @include media(991)
+            @include media(540)
+                font-size: 34px
+                line-height: 1.2
+                margin-bottom: 10px
         p
             font-family: $Poppins
             font-weight: 500
             font-size: 16px
             line-height: 100%
             color: $white
-
+            @include media(540)
+                font-size: 14px
+                line-height: 1.4
+                color: #ffffffcf
         .btn 
             display: inline-block
             margin-top: 30px
@@ -124,12 +144,18 @@ body
 
 .proejct-secA
     padding: 50px 0
+    @include media(1024)
+        padding: 20px 0 50px 0
+    @include media(991)
+    @include media(540)
     .project_wrapper
         padding: 30px 0 50px
         @include media(540)
             padding: 30px 0 30px
         .project_nav
             padding-bottom: 50px
+            @include media(540)
+                padding-bottom: 30px
             ul
                 display: flex
                 align-items: center
@@ -138,6 +164,7 @@ body
                 @include media(540)
                     overflow-x: auto
                     gap: 30px
+                    padding-left: 95px
                 li
                     position: relative
                     color: $text
@@ -166,17 +193,25 @@ body
                     display: grid
                     grid-template-columns: repeat(2, 1fr)
                     gap: 40px 30px
+                    @include media(540)
+                        grid-template-columns: repeat(1, 1fr)
+                        gap: 20px 30px
+
                     .grid-box-item
                         background-color: #f7f7f7
                         width: 100%
                         height: 386px
                         border-radius: 15px
-
                         display: flex
                         flex-direction: column
                         overflow: hidden
                         box-shadow: 0px 3px 8px 0px #0000003D
                         position: relative
+                        @include media(1024)
+                            height: 310px
+                        @include media(991)
+                            height: 370px
+                        @include media(540)
                         &:has(.figure:is(a):hover,.figcaption .ttl:is(a):hover, .figcaption .read-more-btn:is(a):hover)
                             .figure
                                 &::before
@@ -219,6 +254,11 @@ body
                             transform: translate(-50%, -50%)
                             z-index: 1
                             padding: 30px
+                            @include media(1024)
+                                top: 57%
+                            @include media(991)
+                                padding: 0px 10px
+                                top: 65%
                             h5
                                 font-weight: 700
                                 font-size: 36px
@@ -226,6 +266,16 @@ body
                                 max-width: 70%
                                 text-align: left
                                 margin-bottom: 15px
+                                @include media(1024)
+                                    max-width: 70%
+                                    margin: auto
+                                    line-height: 1.1
+                                    font-size: 25px
+                                    text-align: center
+                                    margin-bottom: 10px
+                                @include media(991)
+                                    max-width: 100%
+
                             p
                                 font-family: Poppins
                                 font-weight: 500
@@ -234,10 +284,26 @@ body
                                 color: var(--white)
                                 text-align: left
                                 max-width: 70%
+                                @include media(1024)
+                                    font-size: 15px
+                                    color: #ffffffeb
+                                    max-width: 90%
+                                    text-align: center
+                                    margin: auto
+                                @include media(991)
+                                    width: 100%
+                                    font-size: 12px
+
                         .btn
                             position: absolute
                             left: 5%
                             bottom: 10%
+                            @include media(1024)
+                                left: 50%
+                                top: 75%
+                                transform: translate(-50%,50%)
+                            @include media(991)
+                                top: 80%
                             &:hover
                                 background: $black
                                 color: var(--primary)
@@ -258,6 +324,12 @@ body
     display: flex
     flex-direction: column
     justify-content: center
+    @include media(1024)
+        height: 80vh
+    @include media(991)
+        height: 60vh
+    @include media(540)
+        height: 80vh
     &::before
         content: ''
         position: absolute
@@ -284,27 +356,52 @@ body
         display: flex
         justify-content: space-between
         align-items: center
+        @include media(991)
+            top: 55%
+            gap: 20px
+        @include media(540)
+            display: block
         .content
             width: 35%
             text-align: left
+            @include media(1024)
+                width: 45%
+            @include media(991)
+                width: 40%
+            @include media(540)
+                width: 100%
+                margin: 0 0 30px 0 
+            
             h1
                 font-weight: 700
                 font-size: 36px
                 line-height: 35px
                 margin-bottom: 15px
+                @include media(991)
+                    font-size: 26px
+                    line-height: 1.1
+                @include media(540)
+                    text-align: center
             p
                 font-family: $Poppins
                 font-weight: 500
                 font-size: 16px
                 line-height: 1.4
                 color: $white
+                @include media(991)
+                    font-size: 14px
+                @include media(540)
+                    text-align: center
         .highlights
             width: 392px
-            height: 336px
+            // height: 336px
             border-radius: 15px
             background: $white
             padding: 20px
             position: relative
+            @include media(540)
+                width: 100%
+                padding: 20px 0
             h2
                 color: black
                 font-weight: 700
@@ -317,6 +414,10 @@ body
                 grid-gap: 30px
                 width: 95%
                 margin: auto
+                margin-bottom: 40px
+                @include media(540)
+                    grid-gap: 0
+                    margin-bottom: 0
                 .content
                     width: 100%
                     .title
@@ -332,11 +433,13 @@ body
                         font-size: 16px
                         line-height: 16px
                         color: $black
+                        @include media(540)
+                            font-size: 14px
             .btn
-                position: absolute
-                left: 50%
-                bottom: 15%
-                transform: translateX(-50%)
+                // position: absolute
+                // left: 50%
+                // bottom: 15%
+                // transform: translateX(-50%)
                 background: $black
                 border-color: $black
                 color: $white
@@ -346,7 +449,8 @@ body
                 font-size: 14px
                 line-height: 18px
                 text-align: center
-
+                @include  media(540)
+                    bottom: 7%
 .project-detail-secA
     // padding: 50px 0
     position: relative
@@ -355,14 +459,28 @@ body
         font-size: 36px
         line-height: 24px
         margin: 0 0 30px 0
+        @include media(540)
+            font-size: 34px
+            line-height: 1.2
+            text-align: center
+            margin: 0 0 20px 0
     .flex-box
         display: flex   
         justify-content: space-between
         gap: 40px
+        @include media(540)
+            flex-direction: column
+            gap: 0px
         .flex-box-item:first-child
             padding: 50px 0 50px 45px
             width: 47%
             border-left: 2px solid var(--primary)
+            @include media(991)
+                padding: 60px 0 20px 45px
+                width: 55%
+            @include media(540)
+                width: 100%
+                
             ul 
                 li
                     font-family: Poppins
@@ -373,6 +491,9 @@ body
                     text-align: justify
                     position: relative
                     margin: 0 0 30px 0
+                    @include media(991)
+                        font-size: 14px
+                        margin: 0 0 17px 0
                     &::before
                         content: ""
                         position: absolute
@@ -382,12 +503,15 @@ body
                         aspect-ratio: 1
                         border-radius: 50%
                         background: var(--primary)
+                        
         .flex-box-item:last-child
             margin: 50px 0
             width: 45%
-            height: 389px
             border-radius: 10px
             overflow: hidden
+            @include media(540)
+                width: 100%
+                margin: 20px 0 50px 0
             .proejct-slider
                 height: 100%
                 .proejct-swiper-slider
@@ -403,6 +527,7 @@ body
                                 height: 100%
                                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%)
                                 z-index: 1
+                                border-radius: 10px
                             &:hover
                                 img
                                     transition: 0.3s all ease-in-out
@@ -429,6 +554,10 @@ body
             font-weight: 700
             font-size: 36px
             line-height: 24px
+            @include media(540)
+                font-size: 34px
+                line-height: 1.1
+                text-align: center
         p
             font-family: Poppins
             font-weight: 500
@@ -440,6 +569,8 @@ body
             right: 0
             bottom: 0
             z-index: 2
+            @include media(540)
+                display: none
     .project-detail-slider
         padding: 50px 0
         .news-col
@@ -491,6 +622,10 @@ body
                 left: 50%
                 -ms-transform: translate(-50%, -50%)
                 transform: translate(-50%, -50%)
+                @include media(1024)
+                    top: 63%
+                @include media(540)
+                    width: 99%
                 h5
                     font-weight: 700
                     font-size: 36px
@@ -498,6 +633,17 @@ body
                     max-width: 70%
                     text-align: left
                     margin-bottom: 15px
+                    @include media(1024)
+                        max-width: 70%
+                        margin: auto
+                        line-height: 1.1
+                        font-size: 25px
+                        text-align: center
+                        margin-bottom: 10px
+                    @include media(991)
+                        max-width: 100%
+                    @include media(540)
+                        font-size: 22px
                 p
                     font-family: Poppins
                     font-weight: 500
@@ -506,10 +652,22 @@ body
                     color: var(--white)
                     text-align: left
                     max-width: 70% 
+                    @include media(1024)
+                        font-size: 15px
+                        color: rgba(255, 255, 255, 0.9215686275)
+                        max-width: 90%
+                        text-align: center
+                        margin: auto
+                    @include media(540)
+                        font-size: 12px
             .btn
                 position: absolute
                 left: 5%
                 bottom: 10%
+                @include media(1024)
+                    left: 50%
+                    top: 80%
+                    transform: translate(-50%, 50%)
                 &:hover
                     background: $black
                     color: var(--primary)

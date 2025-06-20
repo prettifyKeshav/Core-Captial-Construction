@@ -24,6 +24,16 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (max-width: 1024px) {
+  .tech-banner {
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .tech-banner {
+    height: 40vh;
+  }
+}
 .tech-banner::before {
   content: "";
   position: absolute;

@@ -19,6 +19,11 @@ body {
   margin-top: 90px;
   background: #EAEAEA;
 }
+@media only screen and (max-width: 1024px) {
+  .service-banner {
+    margin-top: 50px;
+  }
+}
 .service-banner .container {
   max-width: 1170px;
 }
@@ -28,14 +33,42 @@ body {
   gap: 140px;
   padding: 100px 0;
 }
+@media only screen and (max-width: 1024px) {
+  .service-banner .bg-wrapper {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-banner .bg-wrapper {
+    display: block;
+  }
+}
 .service-banner .bg-wrapper h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 45px;
   line-height: 1.4;
 }
+@media only screen and (max-width: 991px) {
+  .service-banner .bg-wrapper h1 {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .service-banner .bg-wrapper h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
 .service-banner .bg-wrapper .content {
   width: 45%;
+}
+@media only screen and (max-width: 991px) {
+  .service-banner .bg-wrapper .content {
+    width: 100%;
+  }
 }
 .service-banner .bg-wrapper .content h2 {
   font-family: Poppins;
@@ -45,6 +78,20 @@ body {
   color: #666666;
   margin: 0 0 20px 0;
 }
+@media only screen and (max-width: 991px) {
+  .service-banner .bg-wrapper .content h2 {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .service-banner .bg-wrapper .content h2 {
+    font-size: 17px;
+    max-width: 100%;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
 .service-banner .bg-wrapper .content p {
   margin: 0 0 20px 0;
   font-family: Poppins;
@@ -52,9 +99,24 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
+@media only screen and (max-width: 540px) {
+  .service-banner .bg-wrapper .content p {
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+}
 .service-banner .bg-wrapper .content .counter-flex {
   display: flex;
   gap: 20px;
+}
+@media only screen and (max-width: 540px) {
+  .service-banner .bg-wrapper .content .counter-flex {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
 }
 .service-banner .bg-wrapper .content .counter-flex .counter-item h5 {
   color: var(--primary);
@@ -71,6 +133,11 @@ body {
   line-height: 1.4;
   color: var(--black);
   max-width: 70%;
+}
+@media only screen and (max-width: 540px) {
+  .service-banner .bg-wrapper .content .counter-flex .counter-item p {
+    max-width: 100%;
+  }
 }
 
 .service-secA {
@@ -90,6 +157,11 @@ body {
   gap: 20px;
   padding: 0 0 50px 0;
 }
+@media only screen and (max-width: 540px) {
+  .service-secA .service_wrapper .service_nav_content .grid-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item {
   background-color: #f7f7f7;
   width: 100%;
@@ -100,6 +172,11 @@ body {
   overflow: hidden;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2392156863);
   position: relative;
+}
+@media only screen and (max-width: 991px) {
+  .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item {
+    height: 345px;
+  }
 }
 .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item:has(.figure:is(a):hover, .figcaption .ttl:is(a):hover, .figcaption .read-more-btn:is(a):hover) .figure::before {
   animation: shine 0.4s linear;
@@ -164,6 +241,16 @@ body {
   z-index: 1;
   padding: 30px;
 }
+@media only screen and (max-width: 1024px) {
+  .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item .figinfo {
+    top: 28%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item .figinfo {
+    top: 64%;
+  }
+}
 .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item .figinfo h5 {
   font-weight: 700;
   font-size: 36px;
@@ -171,6 +258,21 @@ body {
   max-width: 70%;
   text-align: left;
   margin-bottom: 15px;
+}
+@media only screen and (max-width: 1024px) {
+  .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item .figinfo h5 {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item .figinfo h5 {
+    max-width: 100%;
+    margin: auto;
+    line-height: 1.1;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item .figinfo p {
   font-family: Poppins;
@@ -181,10 +283,26 @@ body {
   text-align: left;
   max-width: 70%;
 }
+@media only screen and (max-width: 991px) {
+  .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item .figinfo p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.9215686275);
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+}
 .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item .btn {
   position: absolute;
   left: 5%;
   bottom: 10%;
+}
+@media only screen and (max-width: 991px) {
+  .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item .btn {
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, 50%);
+  }
 }
 .service-secA .service_wrapper .service_nav_content .grid-box .grid-box-item .btn:hover {
   background: var(--black);

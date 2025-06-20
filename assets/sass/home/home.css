@@ -469,6 +469,17 @@ body {
   border-radius: 0%;
   transform: rotate(43deg);
 }
+@media only screen and (max-width: 991px) {
+  .home-secC::before {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home-secC::before {
+    width: 130%;
+    top: 30px;
+  }
+}
 .home-secC .heading {
   text-align: center;
   position: relative;
@@ -715,6 +726,11 @@ body {
   margin: auto;
   max-width: 80%;
 }
+@media only screen and (max-width: 1024px) {
+  .home-secD .grid-box .grid-box-item .figinfo h5 {
+    font-size: 24px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .home-secD .grid-box .grid-box-item .figinfo h5 {
     font-size: 18px;
@@ -736,6 +752,11 @@ body {
 
 .home-secE {
   padding: 50px 0 100px 0px;
+}
+@media only screen and (max-width: 1024px) {
+  .home-secE {
+    padding: 50px 0 60px 0px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .home-secE {
@@ -861,6 +882,11 @@ body {
   flex-direction: column;
   gap: 22px;
 }
+@media only screen and (max-width: 1024px) {
+  .home-secE .box-flex .box-flex-item:last-child {
+    gap: 40px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .home-secE .box-flex .box-flex-item:last-child {
     width: 100%;
@@ -870,6 +896,7 @@ body {
 @media only screen and (max-width: 540px) {
   .home-secE .box-flex .box-flex-item:last-child {
     width: 100%;
+    flex-direction: column;
   }
 }
 .home-secE .box-flex .box-flex-item:last-child .flex-box {
@@ -909,6 +936,11 @@ body {
 }
 .home-secE .box-flex .box-flex-item:last-child .flex-box .right {
   width: 300px;
+}
+@media only screen and (max-width: 1024px) {
+  .home-secE .box-flex .box-flex-item:last-child .flex-box .right {
+    width: 45%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .home-secE .box-flex .box-flex-item:last-child .flex-box .right {
